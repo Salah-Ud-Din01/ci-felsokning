@@ -1,0 +1,13 @@
+[project]
+name = "miniforecast"
+version = "0.1.0"
+description = "Litet exempelprojekt för CI-felsökning"
+requires-python = ">=3.11"
+dependencies = []
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.9"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
