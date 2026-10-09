@@ -1,7 +1,5 @@
 """Baslinjemodell: förutsäger medelvärdet av historiken."""
 
-import os
-
 
 def predict_mean(history: list[float], horizon: int) -> list[float]:
     """Förutsäg medelvärdet av historiken för varje steg framåt."""

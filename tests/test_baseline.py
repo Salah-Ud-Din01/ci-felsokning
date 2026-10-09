@@ -4,7 +4,7 @@ from miniforecast.baseline import predict_mean
 
 
 def test_predict_mean_repeats_the_mean():
-    assert predict_mean([1,2,3],2)==[2.0,2.0]
+    assert predict_mean([1, 2, 3], 2) == [2.0, 2.0]
 
 
 def test_predict_mean_output_length_matches_horizon():

@@ -8,7 +8,7 @@ def moving_average(values: list[float], window: int) -> list[float]:
     if window < 1 or window > len(values):
         raise ValueError("window måste vara mellan 1 och antalet värden")
     array = np.asarray(values, dtype=float)
-    kernel = np.ones(window) / (window + 1)
+    kernel = np.ones(window) / window
     return np.convolve(array, kernel, mode="valid").tolist()
 
 
